@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     <style>
+        body
+        {
+            background-color: lightcyan;
+        }
         div {
              font-family: Verdana;
              font-size: larger;
@@ -14,13 +18,36 @@
              height: 250px;
              margin-right: auto;
              display: flexbox;
+             margin: 70px;
+             border: blue;
+             display: inline-block;
+
 
         }   
        a{
         color: blue;
        }
+       img{
+        float: right;
+        border: solid black;
+        width: 350px;
+        height: 250px;
+       }
        im {
         display: inline-block;
+       }
+       article
+       {
+        display: inline-block;
+       }
+       .button
+       {
+        padding: 15px 32px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 35px;
+        margin: 20px 200px;
+        float: right;
        }
     </style>
     <meta charset="UTF-8">
@@ -30,12 +57,33 @@
 <body>
     <h1 style="text-align: center;">Fitness Club</h1>
     <br>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="exercise.html">EXERCISE</a>
+        <a href="workouts.html">YOGA</a>
+        <a href="diet.html">DIET</a>
+        <a href="membership.html">MEMBERSHIP</a>
+    </nav>
     
-    <img src="image1.png" alt="exercise" class="im">
+    <p><img src="image1.png" alt="exercise" class="im"><h1 style="color: red;">Feel Great.
+        Body and Mind.</h1></p>
+      <p style="font-size: 35px; color: blue;"><button class="button">Join Now</button> from hundreds of workouts, healthy <br>
+        recipes, relaxing meditations, and expert <br>
+        articles, for a whole body and mind <br>
+        approach to feeling great.</p>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
     <h1 style="text-align: center;" class="im">EXERCISE</h1>
 
-    <article style="display: inline-block; margin: 150;">
     <div >  
+        <article style="display: inline-block; margin: auto;">
+        <br>
         <a href="exercise.html">EXERCISE</a>
         <br>
         <ul style="text-align: left;">
@@ -48,12 +96,12 @@
         <li style="text-align: left;"> reduces stress</li>
         <br>
         </ul>
-        </div>
+    </div>
         </article>
 
     
-    <article style="display: inline-block; margin:100px;">
         <div >  
+            <article style="display: inline-block; margin:auto;">
             <br>
             <a href="exercise.html">YOGA</a>
             <br>
@@ -68,23 +116,24 @@
         <br>
         </ul>
         </div>
-        </article>
+           </article>
 
-        <article style="display: inline-block; margin:100px;">
-            <div >
-                <br>  
-                <a href="exercise.html">DIET</a>
-            <ul style="text-align: left;" class="di">
-            <li style="text-align: left;"> helps in increase our energy levels</li>
-            <br>
-            <li style="text-align: left;"> may help in reducing your diseases </li>
-            <br>
-            <li style="text-align: left;">helps to live longer</li>
-            <br>
-            <li style="text-align: left;">boosts immunity </li>
-            <br>
-            </ul>
-            </div>
+       
+        <div >
+            <article style="display: inline-block; margin:auto;">
+            <br>  
+            <a href="exercise.html">DIET</a>
+        <ul style="text-align: left;" class="di">
+        <li style="text-align: left;"> helps in increase our energy levels</li>
+        <br>
+        <li style="text-align: left;"> may help in reducing your diseases </li>
+        <br>
+        <li style="text-align: left;">helps to live longer</li>
+        <br>
+        <li style="text-align: left;">boosts immunity </li>
+        <br>
+        </ul>
+        </div>
             </article>
 </body>
 </html>
