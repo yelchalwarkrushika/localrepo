@@ -1,139 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <style>
-        body
-        {
+        body {
             background-color: lightcyan;
         }
+
+        .button {
+            padding: 15px 32px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 35px;
+            margin: 20px 200px;
+            float: right;
+            background-color: red;
+            animation-name: join;
+            animation-duration: 8s;
+
+        }
+
+
+        @keyframes join {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+        }
+
         div {
-             font-family: Verdana;
-             font-size: larger;
-             border-radius: 15px 50px;
-             background: url(https://img.freepik.com/free-vector/abstract-watercolor-pastel-background_87374-139.jpg);
-             background-position: left top;
-             background-repeat: repeat;
-             padding: 45px;
-             width: 250px;
-             height: 250px;
-             margin-right: auto;
-             display: flexbox;
-             margin: 70px;
-             border: blue;
-             display: inline-block;
+            font-family: Verdana;
+            font-size: larger;
+            border-radius: 15px 50px;
+            background: url(https://img.freepik.com/free-vector/abstract-watercolor-pastel-background_87374-139.jpg);
+            background-position: left top;
+            background-repeat: repeat;
+            padding: 45px;
+            width: 250px;
+            height: 250px;
+            margin-right: auto;
+            display: flexbox;
+            margin: 70px;
+            border: blue;
+            display: inline-block;
 
+        }
 
-        }   
-       a{
-        color: blue;
-       }
-       img{
+        a {
+            color: blue;
+        }
+
+        img {
+            float: right;
+            border: solid black;
+            width: 350px;
+            height: 250px;
+        }
+
+        im {
+            display: inline-block;
+        }
+
+        article {
+            display: inline-block;
+        }
+
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            display: inline;
+            color: #f2f2f2;
+            ;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+    .usersearch{
         float: right;
-        border: solid black;
-        width: 350px;
-        height: 250px;
-       }
-       im {
-        display: inline-block;
-       }
-       article
-       {
-        display: inline-block;
-       }
-       .button
-       {
-        padding: 15px 32px;
-        border-radius: 5px;
-        text-align: center;
-        font-size: 35px;
-        margin: 20px 200px;
-        float: right;
-       }
+    }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Club</title>
 </head>
+
 <body>
     <h1 style="text-align: center;">Fitness Club</h1>
     <br>
 
-    <nav>
+    <nav class="topnav">
         <a href="index.html">HOME</a>
         <a href="about.html">ABOUT</a>
         <a href="exercise.html">EXERCISE</a>
         <a href="workouts.html">YOGA</a>
         <a href="diet.html">DIET</a>
         <a href="membership.html">MEMBERSHIP</a>
+        <input type="button"  id="usersearch" name="usersearch" placeholder="Enter your search" value="search">
+        <label for="usersearch"></label>
     </nav>
-    
-    <p><img src="image1.png" alt="exercise" class="im"><h1 style="color: red;">Feel Great.
-        Body and Mind.</h1></p>
-      <p style="font-size: 35px; color: blue;"><button class="button">Join Now</button> from hundreds of workouts, healthy <br>
+
+    <br>
+    <br>
+    <br>
+
+    <p><img src="image1.png" alt="exercise" class="im">
+    <h1 style="color: red;">Feel Great.
+        Body and Mind.</h1>
+    </p>
+    <p style="font-size: 35px; color: blue;"><button  class="button" ><a href="membership.html" style="color: black;">Join Now</a></button> from hundreds of workouts, healthy
+        <br>
         recipes, relaxing meditations, and expert <br>
         articles, for a whole body and mind <br>
         approach to feeling great.</p>
 
-        <br>
-        <br>
-        <br>
-        <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
     <h1 style="text-align: center;" class="im">EXERCISE</h1>
+    <br>
+    <br>
+    <br>
 
-    <div >  
+
+
+    <div>
         <article style="display: inline-block; margin: auto;">
-        <br>
-        <a href="exercise.html">EXERCISE</a>
-        <br>
-        <ul style="text-align: left;">
-        <li style="text-align: left;"> boosts brainpower</li>
-        <br>
-        <li style="text-align: left;"> boosts performance</li>
-        <br>
-        <li style="text-align: left;"> regular  improves sleep quality</li>
-        <br>
-        <li style="text-align: left;"> reduces stress</li>
-        <br>
-        </ul>
+            <br>
+            <a href="exercise.html">EXERCISE</a>
+            <br>
+            <ul style="text-align: left;">
+                <li style="text-align: left;"> boosts brainpower</li>
+                <br>
+                <li style="text-align: left;"> boosts performance</li>
+                <br>
+                <li style="text-align: left;"> regular improves sleep quality</li>
+                <br>
+                <li style="text-align: left;"> reduces stress</li>
+                <br>
+            </ul>
     </div>
-        </article>
+    </article>
 
-    
-        <div >  
-            <article style="display: inline-block; margin:auto;">
+
+    <div>
+        <article style="display: inline-block; margin:auto;">
             <br>
             <a href="exercise.html">YOGA</a>
             <br>
-        <ul style="text-align: left;" class="yo">
-        <li style="text-align: left;">  benefits heart health</li>
-        <br>
-        <li style="text-align: left;">  increases flexibility</li>
-        <br>
-        <li style="text-align: left;">  increases respiration,energy</li>
-        <br>
-        <li style="text-align: left;">  maintains a balanced metabolism</li>
-        <br>
-        </ul>
-        </div>
-           </article>
+            <ul style="text-align: left;" class="yo">
+                <li style="text-align: left;"> benefits heart health</li>
+                <br>
+                <li style="text-align: left;"> increases flexibility</li>
+                <br>
+                <li style="text-align: left;"> increases respiration,energy</li>
+                <br>
+                <li style="text-align: left;"> maintains a balanced metabolism</li>
+                <br>
+            </ul>
+    </div>
+    </article>
 
-       
-        <div >
-            <article style="display: inline-block; margin:auto;">
-            <br>  
+
+    <div>
+        <article style="display: inline-block; margin:auto;">
+            <br>
             <a href="exercise.html">DIET</a>
-        <ul style="text-align: left;" class="di">
-        <li style="text-align: left;"> helps in increase our energy levels</li>
-        <br>
-        <li style="text-align: left;"> may help in reducing your diseases </li>
-        <br>
-        <li style="text-align: left;">helps to live longer</li>
-        <br>
-        <li style="text-align: left;">boosts immunity </li>
-        <br>
-        </ul>
-        </div>
-            </article>
+            <ul style="text-align: left;" class="di">
+                <li style="text-align: left;"> helps in increase our energy levels</li>
+                <br>
+                <li style="text-align: left;"> may help in reducing your diseases </li>
+                <br>
+                <li style="text-align: left;">helps to live longer</li>
+                <br>
+                <li style="text-align: left;">boosts immunity </li>
+                <br>
+            </ul>
+    </div>
+    </article>
 </body>
+
 </html>
